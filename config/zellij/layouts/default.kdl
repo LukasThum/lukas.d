@@ -1,0 +1,24 @@
+layout {
+  pane_template name="golden_ratio" {
+  }
+  default_tab_template {
+    pane size=1 borderless=true {
+      plugin location="zellij:tab-bar"
+    }
+    pane split_direction="horizontal" {
+      pane size="62%" 
+      pane size="38%" {
+        children
+      }
+    }
+  }
+  tab name="1"
+  tab name="2"
+  tab name="3"
+  tab name="4"
+  tab name="5"
+  tab name="6"
+  tab name="7"
+  tab name="8"
+  tab name="9"
+}

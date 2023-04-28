@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "path": "." },
+    { "path": "repos/browsh" },
+    { "path": "repos/fish-shell" },
+    { "path": "repos/helix" },
+  ],
+  "settings": {}
+}
