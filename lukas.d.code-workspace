@@ -1,9 +1,11 @@
 {
   "folders": [
     { "path": "." },
+    { "path": "../../../.config" },
     { "path": "repos/browsh" },
     { "path": "repos/fish-shell" },
     { "path": "repos/helix" },
+    { "path": "repos/zellij" },
   ],
   "settings": {}
 }

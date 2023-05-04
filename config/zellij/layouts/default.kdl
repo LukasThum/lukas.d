@@ -6,7 +6,7 @@ layout {
       plugin location="zellij:tab-bar"
     }
     pane split_direction="horizontal" {
-      pane size="62%" 
+      pane size="62%"
       pane size="38%" {
         children
       }
@@ -16,9 +16,4 @@ layout {
   tab name="2"
   tab name="3"
   tab name="4"
-  tab name="5"
-  tab name="6"
-  tab name="7"
-  tab name="8"
-  tab name="9"
 }

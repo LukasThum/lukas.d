@@ -9,8 +9,7 @@ function fish_prompt
 end
 
 fish_add_path /opt/homebrew/bin
-fish_add_path /Users/lukas/.bin
-fish_add_path /Users/lukas/.cargo/bin
+fish_add_path ~/.cargo/bin
 
 export EDITOR=hx
 export VISUAL="$EDITOR"
