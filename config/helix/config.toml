@@ -2,7 +2,8 @@
 # hx --grammar fetch
 # hx --grammar build
 
-theme = "solarized_light"
+# theme = "solarized_light"
+theme = "catppuccin_mocha"
 
 [editor]
 line-number = "relative"
@@ -19,3 +20,4 @@ render = true
 
 [keys.insert]
 j = { j = "normal_mode" }
+

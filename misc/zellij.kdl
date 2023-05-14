@@ -1,0 +1,18 @@
+
+  // bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
+  // renametab {
+  //   bind "Esc" { UndoRenameTab; SwitchToMode "Normal"; }
+  //   bind "Enter" { SwitchToMode "Normal"; }
+  // }
+
+  // scroll {
+  //   bind "Ctrl d" { SwitchToMode "Normal"; }
+  //   bind "i" { EditScrollback; SwitchToMode "Normal"; }
+  //   bind "/" { SwitchToMode "EnterSearch"; SearchInput 0; }
+  //   bind "g e" { ScrollToTop; SwitchToMode "Normal"; }
+  //   bind "G" { ScrollToBottom; SwitchToMode "Normal"; }
+  //   bind "f" "PageDown" "Right" "l" { PageScrollDown; }
+  //   bind "b" "PageUp" "Left" "h" { PageScrollUp; }
+  //   bind "d" { HalfPageScrollDown; }
+  //   bind "u" { HalfPageScrollUp; }
+  // }

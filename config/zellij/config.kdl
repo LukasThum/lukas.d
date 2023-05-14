@@ -1,17 +1,27 @@
 keybinds clear-defaults=true {
   normal {
-    // focus
+
+  // Basics:
+    // close focused pane
+    bind "Alt q" { CloseFocus; }
+
+  // Moving around:
+
+    // Move your focus around
     bind "Alt h" "Left" { MoveFocus "Left"; }
     bind "Alt l" "Right" { MoveFocus "Right"; }
     bind "Alt j" "Down" { MoveFocus "Down"; }
     bind "Alt k" "Up" { MoveFocus "Up"; }
 
-    // movement
+    // Move the focused window with the same, but add Shift
     bind "Alt H" "Left" { MovePane "Left"; }
     bind "Alt J" "Down" { MovePane "Down"; }
     bind "Alt K" "Up" { MovePane "Up"; }
     bind "Alt L" "Right" { MovePane "Right"; }
 
+  // Workspaces:
+
+    // Switch to workspace
     bind "Alt 1" { GoToTab 1; }
     bind "Alt 2" { GoToTab 2; }
     bind "Alt 3" { GoToTab 3; }
@@ -22,28 +32,52 @@ keybinds clear-defaults=true {
     bind "Alt 8" { GoToTab 8; }
     bind "Alt 9" { GoToTab 9; }
 
-    // genesis
-    bind "Alt s" { NewPane "Down"; }
+    // Move focused container to workspace
+    // bind "Alt 1" { GoToTab 1; }
+    // bind "Alt 2" { GoToTab 2; }
+    // bind "Alt 3" { GoToTab 3; }
+    // bind "Alt 4" { GoToTab 4; }
+    // bind "Alt 5" { GoToTab 5; }
+    // bind "Alt 6" { GoToTab 6; }
+    // bind "Alt 7" { GoToTab 7; }
+    // bind "Alt 8" { GoToTab 8; }
+    // bind "Alt 9" { GoToTab 9; }
+
+// Layout stuff:
+
+    // emulate splits by creating a new pane right or under
+    bind "Alt b" { NewPane "Down"; }
     bind "Alt v" { NewPane "Right"; }
-    // bind "Alt q" { CloseFocus; }
+
+    // Switch the current container between different layout styles
+    // TODO: not really using this, so..
+
+    // Make the current focus fullscreen
     bind "Alt f" { ToggleFocusFullscreen; }
-    bind "Alt r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-  }
-  renametab {
-    bind "Esc" { UndoRenameTab; SwitchToMode "Normal"; }
-    bind "Enter" { SwitchToMode "Normal"; }
+
+    // switch to resize
+    bind "Alt r" { SwitchToMode "Resize"; }
+
+    // # Toggle the current focus between tiling and floating mode
+    // bindsym $mod+Shift+space floating toggle
+
+    // # Swap focus between the tiling area and the floating area
+    // bindsym $mod+space focus mode_toggle
+
+    // # Move focus to the parent container
+    // bindsym $mod+a focus parent
   }
 
-  scroll {
-    bind "Ctrl d" { SwitchToMode "Normal"; }
-    bind "i" { EditScrollback; SwitchToMode "Normal"; }
-    bind "/" { SwitchToMode "EnterSearch"; SearchInput 0; }
-    bind "g e" { ScrollToTop; SwitchToMode "Normal"; }
-    bind "G" { ScrollToBottom; SwitchToMode "Normal"; }
-    bind "f" "PageDown" "Right" "l" { PageScrollDown; }
-    bind "b" "PageUp" "Left" "h" { PageScrollUp; }
-    bind "d" { HalfPageScrollDown; }
-    bind "u" { HalfPageScrollUp; }
+  resize {
+      bind "Esc" { SwitchToMode "Normal"; }
+      bind "h" "Left" { Resize "Increase Left"; }
+      bind "j" "Down" { Resize "Increase Down"; }
+      bind "k" "Up" { Resize "Increase Up"; }
+      bind "l" "Right" { Resize "Increase Right"; }
+      bind "H" { Resize "Decrease Left"; }
+      bind "J" { Resize "Decrease Down"; }
+      bind "K" { Resize "Decrease Up"; }
+      bind "L" { Resize "Decrease Right"; }
   }
 }
 

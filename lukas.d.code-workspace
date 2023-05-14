@@ -5,6 +5,7 @@
     { "path": "../arcane-depths" },
     { "path": "../zero-to-graphql-using-elixir" },
     { "path": "../craft-graphql-apis-in-elixir-with-absinthe" },
+    { "path": "../.helix" },
 
     { "path": "../../.config" },
 

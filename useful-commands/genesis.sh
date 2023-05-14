@@ -13,3 +13,5 @@ git clone https://github.com/fish-shell/fish-shell.git
 git clone https://github.com/helix-editor/helix.git
 
 git clone https://github.com/zellij-org/zellij.git
+
+git clone https://github.com/catppuccin/iterm.git
