@@ -1,11 +1,17 @@
 {
   "folders": [
     { "path": "." },
-    { "path": "../../../.config" },
-    { "path": "repos/browsh" },
-    { "path": "repos/fish-shell" },
-    { "path": "repos/helix" },
-    { "path": "repos/zellij" },
+    { "path": "../amiga" },
+    { "path": "../arcane-depths" },
+    { "path": "../zero-to-graphql-using-elixir" },
+    { "path": "../craft-graphql-apis-in-elixir-with-absinthe" },
+
+    { "path": "../../.config" },
+
+    // { "path": "repos/browsh" },
+    // { "path": "repos/fish-shell" },
+    // { "path": "repos/helix" },
+    // { "path": "repos/zellij" },
   ],
   "settings": {}
 }
