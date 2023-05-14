@@ -71,6 +71,7 @@ mkdir -p ~/.config/helix
 mkdir -p ~/.config/helix/themes
 create_symlink "../config/helix/config.toml" ~/.config/helix/config.toml
 create_symlink "../config/helix/languages.toml" ~/.config/helix/languages.toml
+create_symlink "../repos/helix/runtime" ~/.config/helix/runtime
 create_symlink "../config/helix/themes/catppuccin_mocha.toml" ~/.config/helix/themes/catppuccin_mocha.toml
 create_symlink "../config/helix/themes/solarized_light.toml" ~/.config/helix/themes/solarized_light.toml
 

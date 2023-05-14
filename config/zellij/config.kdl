@@ -46,8 +46,8 @@ keybinds clear-defaults=true {
 // Layout stuff:
 
     // emulate splits by creating a new pane right or under
-    bind "Alt b" { NewPane "Down"; }
-    bind "Alt v" { NewPane "Right"; }
+    bind "Alt b" { NewPane "Right"; }
+    bind "Alt v" { NewPane "Down"; }
 
     // Switch the current container between different layout styles
     // TODO: not really using this, so..
@@ -66,10 +66,14 @@ keybinds clear-defaults=true {
 
     // # Move focus to the parent container
     // bindsym $mod+a focus parent
+
+    bind "Alt u" { HalfPageScrollDown; }
+    bind "Alt i" { HalfPageScrollUp; }
   }
 
   resize {
       bind "Esc" { SwitchToMode "Normal"; }
+      bind "Alt r" { SwitchToMode "Normal"; }
       bind "h" "Left" { Resize "Increase Left"; }
       bind "j" "Down" { Resize "Increase Down"; }
       bind "k" "Up" { Resize "Increase Up"; }
@@ -82,9 +86,9 @@ keybinds clear-defaults=true {
 }
 
 plugins {
-    tab-bar { path "tab-bar"; }
-    status-bar { path "status-bar"; }
-    strider { path "strider"; }
+    // tab-bar { path "tab-bar"; }
+    // status-bar { path "status-bar"; }
+    // strider { path "strider"; }
     compact-bar { path "compact-bar"; }
 }
 

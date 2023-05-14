@@ -54,3 +54,6 @@ This repo will live in `~/.config/lukas.d/`. There will be a `repos` folder that
 ```
 
 To set up your development environment with this configuration, simply clone this repository into the `~/.config/lukas.d/` directory and run the installation script. This will automatically set up the specified software with the custom configurations provided in the repo.
+
+## Ideas
+make zellij tabs somehow initialize as workspaces?

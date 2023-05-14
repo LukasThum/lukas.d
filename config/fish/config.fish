@@ -15,4 +15,6 @@ fish_add_path ~/.bin
 export EDITOR=hx
 export VISUAL="$EDITOR"
 
+source ~/.secrets.fish
+
 fish_vi_key_bindings
