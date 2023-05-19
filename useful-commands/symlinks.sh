@@ -61,6 +61,9 @@ function create_symlink() {
   fi
 }
 
+# minecraft
+create_symlink "../minecraft" "/Users/lukasthum/Library/Application Support/minecraft/saves/lukas"
+
 # fish
 mkdir -p ~/.config/fish
 create_symlink "../config/fish/config.fish" ~/.config/fish/config.fish
@@ -84,3 +87,4 @@ create_symlink "../config/zellij/layouts/default.kdl" ~/.config/zellij/layouts/d
 # browsh
 mkdir -p ~/.config/browsh
 create_symlink "../config/browsh/config.toml" ~/.config/browsh/config.toml
+
