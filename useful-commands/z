@@ -1,0 +1,4 @@
+/opt/homebrew/bin/zellij \
+  --layout ~/.config/zellij/layouts/default.kdl options \
+  --simplified-ui true \
+  --disable-mouse-mode

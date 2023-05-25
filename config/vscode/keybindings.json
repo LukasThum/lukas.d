@@ -1,0 +1,14 @@
+[
+  { "key": "cmd+-", "command": "-workbench.action.zoomOut"},
+  { "key": "shift+cmd+-", "command": "-workbench.action.zoomOut"},
+  { "key": "cmd+numpad_subtract", "command": "-workbench.action.zoomOut"},
+  { "key": "cmd+-", "command": "editor.action.fontZoomOut"},
+  { "key": "cmd+=", "command": "-workbench.action.zoomIn"},
+  { "key": "shift+cmd+=", "command": "-workbench.action.zoomIn"},
+  { "key": "cmd+numpad_add", "command": "-workbench.action.zoomIn"},
+  { "key": "cmd++", "command": "editor.action.fontZoomIn"},
+  { "key": "cmd+0", "command": "-workbench.action.focusSideBar"},
+  { "key": "cmd+numpad0", "command": "-workbench.action.zoomReset"},
+  { "key": "cmd+0", "command": "editor.action.fontZoomReset"},
+  { "key": "cmd+f", "command": "-list.find", "when": "listFocus && listSupportsFind"},
+]

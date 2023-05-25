@@ -1,0 +1,19 @@
+# in macos
+docker run -it --platform=linux/amd64 -v ${PWD}:/root/ debian bash
+
+# inside container
+apt-get update && apt-get install -y \
+  freetds-bin \
+  freetds-dev \
+  libssl-dev \
+  libxslt-dev \
+  libxml2-dev \
+  python3 \
+  python3-pip \
+&& pip3 install \
+  beautifulsoup4 \
+  lxml \
+  openpyxl \
+  pandas \
+  pymssql \
+  sqlalchemy

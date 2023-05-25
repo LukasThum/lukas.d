@@ -61,8 +61,12 @@ function create_symlink() {
   fi
 }
 
+# vscode
+create_symlink "../config/vscode/keybindings.json" ~/Library/Application\ Support/Code\ -\ Insiders/User/keybindings.json
+create_symlink "../config/vscode/settings.json" ~/Library/Application\ Support/Code\ -\ Insiders/User/settings.json
+
 # minecraft
-create_symlink "../minecraft" "/Users/lukasthum/Library/Application Support/minecraft/saves/lukas"
+create_symlink "../minecraft" "~/Library/Application Support/minecraft/saves/lukas"
 
 # fish
 mkdir -p ~/.config/fish
